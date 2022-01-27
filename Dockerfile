@@ -5,9 +5,7 @@ COPY ./ /src
 WORKDIR /src
 
 RUN npm cache clean --force && \
-    npm install && \
-    npm uninstall -g npm && \
-    apk del .build-deps
+    npm install &&
 
 EXPOSE      80
 ENTRYPOINT  ["node", "index"]
