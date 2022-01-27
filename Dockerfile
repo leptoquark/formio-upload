@@ -5,7 +5,7 @@ COPY ./ /src
 WORKDIR /src
 
 RUN npm cache clean --force && \
-    npm install &&
+    npm install
 
 EXPOSE      80
 ENTRYPOINT  ["node", "index"]
