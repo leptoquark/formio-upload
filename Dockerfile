@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:latest
 MAINTAINER Form.io <support@form.io>
 
 COPY ./ /src
